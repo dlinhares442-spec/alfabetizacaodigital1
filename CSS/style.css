@@ -1,0 +1,339 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background: #3f777e;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+main {
+  padding: 20px;
+}
+
+nav {
+  margin-top: 20px; /* espaço de 20px entre o header e o nav */
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+footer {
+  background: #3f777e;
+  color: white;
+  text-align: left;
+  padding: 5px;
+  font-size: 0.8em;
+}
+
+nav a {
+  text-decoration: none; /* remove o sublinhado */
+  margin-right: 20px; /*Cria um espaço entre cada link do nav*/
+  font-size: 1.1em;
+}
+
+.ativar a:hover { /*sublinha e deixa no bold sempre que passar o mouse por cima dos links do nav*/
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.ativo { /*Deixa sublinhado o topico selecionado em nav */
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) { /**ajusta o tamanho do nav para telas pequenas*/
+  nav {
+    flex-direction: column; /*Como o nav tem 2 seções esse comando vai fazer com que essas seções que são como sub caixas (já que estão em uma caixa maior), isso deixa elas uma em baixo da outra */
+    align-items: center; /*Alinha todos os elementos dentro de nav ao centro*/
+  }
+
+  nav a {
+  margin-right: 20px; /* espaçamento vertical */
+  }
+
+  .ladoalado {
+  flex-direction: column;
+  max-width: 1000px;
+  align-items: center;
+  }
+
+}
+
+footer p {
+  font-size: 1.2em;
+}
+
+.ladoalado {
+  display: flex; /* Sempre que temos um texto e uma imagem ou dois textos na mesma caixa podemos usar o displayflex para permitir que eles fiquem um ao lado do outro*/
+  gap: 20px; /*Espaço entre as duas caixas*/
+  max-width: 1000px;/*limita a largura máxima das duas caixas, assim fazendo com que se a tela esticar até mais que 1000 pixels os elementos não vão mais se ajustar a tela */
+  margin: 0 auto; /*Coloca a caixa no centro da tela*/
+}
+
+.imagemdireita {
+  margin: 0px 0px -8px 0px; /*Não deixa a imagem encostar no nav e ajusta a sombra*/
+  height: auto; /*deixa a  imagem centralizada*/
+  border-radius: 20px;
+  box-shadow: 36px 15px 53px rgba(0, 0, 0, 0.4);
+}
+
+.textoaoladodaimagem {
+  max-width: 600px; /*Limita a largura máxima da imagem até 600px, fazendo com que ela não se ajuste a nenhum valor acima disso*/
+}
+
+.textoaoladodaimagemartigos {
+  max-width: 500px;
+}
+
+.textoaocentro {
+  margin: 30px auto;
+  text-align: center; 
+  max-width: 500px;
+}
+
+#textofinalprimeirapagina {
+  margin: 30px auto;
+  text-align: center; 
+}
+
+p {
+  padding: 0px 0px 0px 10px;/* usado para quando a aba ficar muito pequena as letras não encostem na borda da aba */
+}
+
+h2 {
+  padding: 0px 0px 0px 10px; /* usado para quando a aba ficar muito pequena as letras não encostem na borda da aba */
+}
+
+.ladoladonav {
+  display: flex; /* Sempre que temos um texto e uma imagem ou dois textos na mesma caixa podemos usar o displayflex para permitir que eles fiquem um ao lado do outro*/
+  max-width: 1200px;/*limita a largura máxima das duas caixas, assim fazendo com que se a tela esticar até mais que 1000 pixels os elementos não vão mais se ajustar a tela */
+  margin: 0 auto; /*Coloca a caixa no centro da tela*/
+  align-items: center; /*Alinha as caixas pelo topo*/
+  text-align: center;
+}
+
+.logoEsquerdaNav {
+  margin: 0px 80px 0px 0px
+}
+
+.espacologoetitulo {
+  margin: 0px 10px 0px 0px
+}
+
+.titulospaginainicial {
+  margin-left: 450px;
+  text-align: left;
+}
+
+.justificartextos {
+  text-align: justify;
+  max-width: 500px;
+}
+
+.titulonav {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#imageminicial {
+  margin-top: 35px;
+}
+
+#listapagina1 {
+  text-align: left; 
+  margin: 0px 0px 0px 450px;
+  max-width: 350px;
+}
+
+#botaoartigos {
+  background-color: #F26D3D;
+  font-size: 1.5em;
+  padding: 10px;
+  max-width: 100px;
+  color: white;
+  text-decoration: none;
+  display: inline;
+  border-radius: 8px; 
+}
+
+.centro {
+  text-align: center; /* Alinha tudo dentro de um bloco (não aplicável a elementos*/
+  margin-bottom: 20px;
+}
+
+div.centro a:hover {
+  background-color: #F26D3D;
+  font-size: 1.5em;
+  padding: 10px;
+  max-width: 100px;
+  color: white;
+  text-decoration: underline;
+  display: inline;
+  border-radius: 8px; 
+  font-weight: bold;
+}
+
+.botaoparaconteudo {
+  width: 150px;
+  height: 100px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 15px 30px; 
+}
+
+.centrobotaoconteudo {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 20px;
+  justify-content: center; 
+}
+
+div.centrobotaoconteudo a:hover {
+  width: 150px;
+  height: 100px;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(194, 194, 194);
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 15px 30px;
+  justify-content: center; 
+}
+
+div.textodosartigos {
+  text-align: justify; 
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.titulodosarquivos {
+  text-align: center; 
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+#topico1gmail {
+  text-decoration: none;
+}
+
+#topico2gmail {
+  text-decoration: none;
+}
+
+.caixaartigos {
+  background-color: #d7d7d7;
+  padding: 8px;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: left;
+}
+
+.caixaartigos a {
+  display: block;
+  color: rgb(34, 34, 255);
+  text-decoration: none;
+  padding: 2px;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+.caixaartigos a:hover{
+  display: block;
+  color: rgb(34, 34, 255);
+  text-decoration: underline;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.passoapassoartigos li {
+  margin-bottom: 20px;
+  list-style-position: inside;
+}
+
+.imagenscentro {
+  display: flex;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 36px 15px 53px rgba(0, 0, 0, 0.4);
+}
+
+#topico1fake {
+  text-decoration: none;
+}
+
+#topico2fake {
+  text-decoration: none;
+}
+
+#topico3fake {
+  text-decoration: none;
+}
+
+#topico4fake {
+  text-decoration: none;
+}
+
+#topico5fake {
+  text-decoration: none;
+}
+
+#topicodicafake {
+  text-decoration: none;
+}
+
+#topico1golpe {
+  text-decoration: none;
+}
+
+#topico2golpe {
+  text-decoration: none;
+}
+
+#topico3golpe {
+  text-decoration: none;
+}
+
+#topico4golpe {
+  text-decoration: none;
+}
+
+#topico5golpe {
+  text-decoration: none;
+}
+
+#topico1sociais {
+  text-decoration: none;
+}
+
+#topico2sociais {
+  text-decoration: none;
+}
+
+#topico3sociais {
+  text-decoration: none;
+}
+
+#topico4sociais {
+  text-decoration: none;
+}
+
+#topico5sociais {
+  text-decoration: none;
+}
+
+#topico6sociais {
+  text-decoration: none;
+}
